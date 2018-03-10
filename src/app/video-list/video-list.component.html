@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+    <h3>Videos</h3>
+    <div class="ul">
+      <div class="list-group">
+        <a
+          [routerLink]="['/video', video.id]"
+          class="list-group-item list-group-item-action"
+          *ngFor="let video of videos | async">
+          {{video.id}}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

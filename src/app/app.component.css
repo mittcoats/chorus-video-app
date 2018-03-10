@@ -1,0 +1,5 @@
+#gradient-blue {
+    background-image: radial-gradient(circle at 50% 50%,#038ca3,#381a84) !important;
+    min-height: 900px;
+    padding-bottom: 100px;
+}

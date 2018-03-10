@@ -1,0 +1,36 @@
+<div class="container container-fluid">
+  <div class="jumbotron">
+    <h2 class="display-4">Video Player</h2>
+    <div class="row">
+      <div class="col-md-8 col-sm-12 p-3">
+        <div class="embed-responsive embed-responsive-16by9">
+          <video src="{{videoUrl}}" controls></video>
+        </div>
+        <p class="small text-muted m-2">Video Id: {{id}}</p>
+      </div>
+      <div class="col-md-4 col-sm-12 p-3">
+        <div class="bg-light p-3">
+          <h4>Transcript</h4>
+          <hr>
+          <div style="overflow-y: scroll; height: 350px;">
+            <div *ngFor="let comment of transcript">
+              <div [ngClass]="{
+                'cust': comment.speaker === 'Cust',
+                'rep': comment.speaker === 'Rep'
+                }"
+                class="small">
+                <p>
+                  <span>{{comment.speaker}}: {{ comment.snippet }}</span><br>
+                  <span class="text-muted font-italic">
+                    {{ comment.time | number:'2.0-0' }} mins
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

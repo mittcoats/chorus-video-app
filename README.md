@@ -10,9 +10,9 @@ transcript:
 video: `https://static.chorus.ai/api<id>.mp4`
 
 **TODO**: Build a single page web app using the Angular CLI with the following features
-- A route to the video, that includes the Id in the url
-- The HTML5 video tag to display the video, using the Id and chorus api endpoint
-- A section displaying the transcript, sorted by time in ascending order
+- A route to the video, that includes the Id in the url.
+- A video player that uses the HTML5 video tag to display the video and the video `id` to request the video from the chorus API.
+- A section displaying the transcript, sorted by time in ascending order.
 
 The transcipt object is shaped like this:
 ```

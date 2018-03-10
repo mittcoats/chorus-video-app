@@ -16,7 +16,8 @@ video: `https://static.chorus.ai/api<id>.mp4`
 
 The transcipt object is shaped like this:
 ```
-"snippet": 'the words they spoke',"speaker": 'This is the name of the speaker'
+"snippet": 'the words they spoke',
+"speaker": 'This is the name of the speaker'
 "time": 'Time in call when utterance happened.'
 ```
 
